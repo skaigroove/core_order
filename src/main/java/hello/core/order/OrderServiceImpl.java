@@ -15,8 +15,7 @@ public class OrderServiceImpl implements OrderService{
     /**
      * 인터페이스와 추상클래스 모두 의존하고 있으므로 DIP를 위반하고 있다 !!!!
      */
-    // private final DiscountPolicy discountPolicy = new FixDiscountPolicy();
-    // private final DiscountPolicy discountPolicy = new RateDiscountPolicy(); // final로 선언하면 무조건 값이 할당되어야한다.
+
 
 
     public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
